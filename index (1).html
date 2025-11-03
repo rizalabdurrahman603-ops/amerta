@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amerta • Kopi & Aneka Jajanan Malam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#201c1c;
+      --accent:#b77b45;
+      --accent2:#33241a;
+      --text:#f7f3ef;
+      --muted:#cfc5b8;
+      --card:#2b2221;
+      --highlight:#b77b45;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Poppins,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    header{position:sticky;top:0;z-index:50;background:rgba(32,28,28,0.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,0.05)}
+    .container{max-width:1200px;margin:0 auto;padding:20px}
+
+    /* navbar */
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#7a5432);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:18px}
+    .brand h1{font-size:22px;margin:0;color:var(--highlight)}
+    nav ul{display:flex;list-style:none;gap:20px;margin:0;padding:0}
+    nav a{font-weight:600;color:var(--muted);transition:color .3s}
+    nav a:hover{color:var(--highlight)}
+    .cta{background:var(--accent);padding:10px 18px;border-radius:12px;color:#fff;font-weight:700;transition:background .3s}
+    .cta:hover{background:#99693c}
+
+    /* hero */
+    .hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:60px 0}
+    .hero-text{max-width:600px}
+    .hero h2{font-size:40px;margin:0 0 10px;color:var(--highlight)}
+    .hero p{color:var(--muted);margin:0 0 25px;font-size:17px}
+    .btn{display:inline-block;padding:12px 20px;border-radius:12px;background:var(--accent);color:#fff;font-weight:600;margin-right:10px;transition:transform .3s,background .3s}
+    .btn:hover{transform:translateY(-3px);background:#99693c}
+    .hero-img img{width:360px;border-radius:18px;box-shadow:0 0 25px rgba(0,0,0,0.5)}
+
+    /* about */
+    section{padding:60px 0}
+    h3{text-align:center;font-size:26px;color:var(--highlight);margin-bottom:30px}
+    .about{text-align:center;max-width:800px;margin:auto;color:var(--muted)}
+
+    /* menu */
+    .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+    .menu-card{background:var(--card);border:1px solid rgba(255,255,255,0.05);padding:20px;border-radius:16px;transition:transform .3s,box-shadow .3s}
+    .menu-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.4)}
+    .menu-card h4{margin:0 0 5px;color:var(--highlight)}
+    .menu-card p{margin:5px 0 0;color:var(--muted);font-size:14px}
+
+    /* gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:20px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:12px;transition:transform .3s,opacity .3s}
+    .gallery img:hover{transform:scale(1.05);opacity:.85}
+
+    /* kontak */
+    .kontak{text-align:center}
+    .kontak a{color:var(--highlight)}
+    .kontak-box{background:var(--card);padding:20px;border-radius:16px;display:inline-block;margin-top:20px}
+
+    footer{text-align:center;padding:25px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.05)}
+
+    @media(max-width:768px){
+      .hero{flex-direction:column;text-align:center}
+      .hero-img img{margin-top:20px;width:80%}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">AM</div>
+        <h1>Amerta</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+      <a href="#kontak" class="cta">Pesan Sekarang</a>
+    </div>
+  </header>
+
+  <div class="container hero">
+    <div class="hero-text">
+      <h2>Amerta Kopi & Jajanan Malam</h2>
+      <p>Nikmati suasana malam yang hangat di angkringan modern dengan cita rasa khas tradisional. Sajian kopi, wedang, dan jajanan malam yang menggugah selera.</p>
+      <a href="#menu" class="btn">Lihat Menu</a>
+      <a href="#kontak" class="btn" style="background:var(--accent2)">Hubungi Kami</a>
+    </div>
+    <div class="hero-img">
+      <img src="Amerta.png" alt="Foto Angkringan Amerta" />
+    </div>
+  </div>
+
+  <section id="about">
+    <h3>Tentang Kami</h3>
+    <p class="about">Sejak 2025, Amerta hadir sebagai tempat nongkrong malam dengan konsep klasik dan elegan. Menggabungkan cita rasa kopi tradisional dengan jajanan khas angkringan yang menghadirkan kenyamanan bagi semua kalangan.</p>
+  </section>
+
+  <section id="menu" class="container">
+    <h3>Menu Favorit</h3>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <h4>Kopi Tubruk</h4>
+        <p>Rp 8.000 — Kopi hitam pekat tanpa gula, khas angkringan.</p>
+      </div>
+      <div class="menu-card">
+        <h4>Kopi Susu</h4>
+        <p>Rp 12.000 — Perpaduan kopi dan susu creamy.</p>
+      </div>
+      <div class="menu-card">
+        <h4>Wedang Jahe</h4>
+        <p>Rp 7.000 — Minuman hangat untuk malam sejuk.</p>
+      </div>
+      <div class="menu-card">
+        <h4>Bakmi Goreng</h4>
+        <p>Rp 18.000 — Gurih lezat dengan bumbu rumahan.</p>
+      </div>
+      <div class="menu-card">
+        <h4>Sate Usus</h4>
+        <p>Rp 6.000 — Sate khas angkringan, gurih nikmat.</p>
+      </div>
+      <div class="menu-card">
+        <h4>Gorengan</h4>
+        <p>Rp 10.000 — Pisang, tahu, tempe, lumpia hangat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri" class="container">
+    <h3>Galeri Suasana</h3>
+    <div class="gallery">
+      <img src="images/galeri1.jpg" alt="galeri-1">
+      <img src="images/galeri2.jpg" alt="galeri-2">
+      <img src="images/galeri3.jpg" alt="galeri-3">
+      <img src="images/galeri4.jpg" alt="galeri-4">
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h3>Kontak & Lokasi</h3>
+    <div class="kontak">
+      <p>Ingin pesan atau reservasi tempat? Hubungi kami melalui WhatsApp.</p>
+      <a href="https://wa.me/6281234567890" class="btn">Chat WhatsApp</a>
+      <div class="kontak-box">
+        <p><strong>Alamat:</strong><br>Jl. Contoh No. 12, Kota Anda</p>
+        <p><strong>Jam Buka:</strong><br>18.00 - 02.00 WIB</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Amerta • Kopi & Jajanan Malam • Since 2025</p>
+  </footer>
+</body>
+</html>
